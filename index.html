@@ -85,7 +85,7 @@
         font-weight: bold;
         position: relative;
     }
-    #display {
+    #display{
         color: #000;
         text-align: right;
         position: absolute;
@@ -93,6 +93,12 @@
         width: 100%;
         font-size: 48px;
         font-weight: 600;
+    }
+    #display2 {
+        color:#000;
+        text-align: right;
+        font-size: 20px;
+
     }
     .btn-number {
         background-color: #EFEFEF;
@@ -114,50 +120,53 @@
     <div class="center">
         <div id="calculadora">
             <header>
-                <div id="display">
-                    0
-                </div>
+                <div id="display"></div>
+
+                <div id="display2"></div>
             </header>
-            <section class="container">
+            <section id="buttons" class="container">
                 <div class="row">
-                    <button type="button" class="btn btn-others col-sm">%</button>
-                    <button type="button" class="btn btn-others col-sm">√</button>
-                    <button type="button" class="btn btn-others col-sm">x²</button>
-                    <button type="button" class="btn btn-others col-sm">¹/x</button>
+                    <button type="button" class="btn btn-others col-sm btn-%">%</button>
+                    <button type="button" class="btn btn-others col-sm btn-√" >√</button>
+                    <button type="button" class="btn btn-others col-sm btn-x²">x²</button>
+                    <button type="button" class="btn btn-others col-sm btn-¹/x">¹/x</button>
                 </div>
                 <div class="row">
-                    <button type="button" class="btn btn-others col-sm">CE</button>
-                    <button type="button" class="btn btn-others col-sm">C</button>
-                    <button type="button" class="btn btn-others col-sm">←</button>
-                    <button type="button" class="btn btn-others col-sm">÷</button>
+                    <button type="button" class="btn btn-others col-sm btn-CE">CE</button>
+                    <button type="button" class="btn btn-others col-sm btn-C">C</button>
+                    <button type="button" class="btn btn-others col-sm btn-←">←</button>
+                    <button type="button" class="btn btn-others col-sm btn-/">÷</button>
                 </div>
                 <div class="row">
-                    <button type="button" class="btn btn-number col-sm">7</button>
-                    <button type="button" class="btn btn-number col-sm">8</button>
-                    <button type="button" class="btn btn-number col-sm">9</button>
-                    <button type="button" class="btn btn-others col-sm">X</button>
+                    <button type="button" class="btn btn-number col-sm btn-7">7</button>
+                    <button type="button" class="btn btn-number col-sm btn-8">8</button>
+                    <button type="button" class="btn btn-number col-sm btn-9">9</button>
+                    <button type="button" class="btn btn-others col-sm btn-*">X</button>
                 </div>
                 <div class="row">
-                    <button type="button" class="btn btn-number col-sm">4</button>
-                    <button type="button" class="btn btn-number col-sm">5</button>
-                    <button type="button" class="btn btn-number col-sm">6</button>
-                    <button type="button" class="btn btn-others col-sm">-</button>
+                    <button type="button" class="btn btn-number col-sm btn-4">4</button>
+                    <button type="button" class="btn btn-number col-sm btn-5">5</button>
+                    <button type="button" class="btn btn-number col-sm btn-6">6</button>
+                    <button type="button" class="btn btn-others col-sm btn--">-</button>
                 </div>
                 <div class="row">
-                    <button type="button" class="btn btn-number col-sm">1</button>
-                    <button type="button" class="btn btn-number col-sm">2</button>
-                    <button type="button" class="btn btn-number col-sm">3</button>
-                    <button type="button" class="btn btn-others col-sm">+</button>
+                    <button type="button" class="btn btn-number col-sm btn-1">1</button>
+                    <button type="button" class="btn btn-number col-sm btn-2">2</button>
+                    <button type="button" class="btn btn-number col-sm btn-3">3</button>
+                    <button type="button" class="btn btn-others col-sm btn-+">+</button>
                 </div>
                 <div class="row">
-                    <button type="button" class="btn btn-others col-sm">±</button>
-                    <button type="button" class="btn btn-number col-sm">0</button>
-                    <button type="button" class="btn btn-others col-sm">,</button>
-                    <button type="button" class="btn btn-others col-sm">=</button>
+                    <button type="button" class="btn btn-others col-sm btn-±">±</button>
+                    <button type="button" class="btn btn-number col-sm btn-0">0</button>
+                    <button type="button" class="btn btn-others col-sm btn-,">,</button>
+                    <button type="button" class="btn btn-others col-sm btn-=">=</button>
                 </div>
             </section>
         </div>
     </div>
+
+    <script src="scripts/controller/CalcController.js"></script>
+    <script src="scripts/calculator.js"></script>
 
 </body>
 </html>
